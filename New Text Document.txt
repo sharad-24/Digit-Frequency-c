@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+char input;
+int arr[10]={},temp,a;
+do{
+    a = scanf("%c",&input);
+    temp = input-48;
+    if(temp<10) 
+    arr[temp]++;
+}
+while(a>=1);
+for(temp=0;temp<10;temp++)
+{
+    printf("%d ",*(arr+temp));
+}
+    
+    return 0;
+}
